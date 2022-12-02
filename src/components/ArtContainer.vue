@@ -100,7 +100,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     border-radius: 3rem;
     max-width: 100%;
     max-height: 100%;
