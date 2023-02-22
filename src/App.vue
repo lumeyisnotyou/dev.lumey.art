@@ -6,6 +6,7 @@ import ArtContainer from './components/ArtContainer.vue'
 // Import ArtModal component
 // import ArtModal from './components/ArtModal.vue'
 
+
 //
 
 </script>
@@ -30,6 +31,7 @@ import ArtContainer from './components/ArtContainer.vue'
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-gap: 1rem;
   grid-auto-flow: row;
+  padding: 1rem;
   /* Vertical Grid */
   
   font-family: "DM Sans", sans-serif;

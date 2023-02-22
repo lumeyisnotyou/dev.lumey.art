@@ -3,7 +3,7 @@
         "artist": "polefox",
         "artistLink": "https://www.furaffinity.net/user/polefox/",
         "file": "https://photos.lumey.dev/api/v1/t/2e979d0e647cf213db74ebda48e8e7b034fbb0a6/30eog1gq/fit_1280",
-        "prettyName": "Reference Sheet"
+        "prettyName": "lumey Reference Sheet"
     },
     "snuffleArt": {
         "artist": "snuffles",
@@ -22,5 +22,11 @@
         "artistLink": "https://twitter.com/BlueHaloDraws",
         "file": "https://photos.lumey.dev/api/v1/t/acbb77a330a93f703643868ff40bce1e1db26c14/30eog1gq/fit_1920",
         "prettyName": "Badge Commission"
+    },
+    "nonaRef": {
+        "artist": "Avatar: Nicoreda",
+        "artistLink": "https://twitter.com/Nicoreda",
+        "file": "https://photos.lumey.dev/api/v1/t/36cf86d0b354927b0c7f8f75b3e2f794e41cc73c/30eog1gq/fit_3840",
+        "prettyName": "Nona Reference Sheet"
     }
 }

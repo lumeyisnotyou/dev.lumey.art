@@ -17,25 +17,11 @@ export default defineComponent({
 
 
 </script>
-<script setup>
-import { onMounted } from 'vue'
-onMounted(() => {
-    function openModal() {
-        showModal = true
-    }
-var image = document.getElementById('container')
-image.onclick = function() {
-    openModal();
-};
-});
-
-
-</script>
 
 <template>
     <!-- Art caption -->
-    <div class="container">
-        <img class="art-image" :src="art.file" alt="art image" />
+    <div class="container" v-viewer.static="{toolbar: false, navbar: false}">
+        <img class="art-image" :src="art.file" :alt="art.prettyName" />
         <div class="art-caption">
             <h2 style="font-weight: 700;">{{ art.prettyName }}</h2>
             <p>Artist: <a :href="art.artistLink">{{art.artist}}</a></p>
@@ -49,14 +35,20 @@ image.onclick = function() {
 </template>
 <style scoped>
 .template {
-    width: 10vw;
-    height: 10vh;
+    max-width: 10vw;
+    max-height: 10vh;
 }
 
 .container {
     position: relative;
     text-align: center;
     color: white;
+    /* make this fit on screen on mobile devices */
+    height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+
 }
 a {
     color: #bcdceb;
@@ -97,12 +89,16 @@ a {
 }
 
 .art-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3rem;
+    /* Center this image vertically and horizontally */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    border-radius: 1rem;
     max-width: 100%;
     max-height: 100%;
+
+
 
 
 }
