@@ -1,0 +1,12 @@
+{
+    "lumey": {
+        "name": "lumey",
+        "picture": "https://photos.lumey.dev/api/v1/t/5397b8168e49f6622256573592fd06ff9de8f996/30eog1gq/fit_2048",
+        "mainColor": "#bcdceb"
+    },
+    "nona": {
+        "name": "Nona",
+        "picture": "https://photos.lumey.dev/api/v1/t/ce8306c4635d2823270450034263cc556cf0d596/30eog1gq/fit_2048",
+        "mainColor": "#9373bf"
+    }
+}
