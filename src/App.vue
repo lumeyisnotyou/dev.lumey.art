@@ -16,12 +16,12 @@ import ArtContainer from './components/ArtContainer.vue'
     <h1>lumey's art gallery</h1>
   </div>
   <div class="artgrid">
-    
-      <ArtContainer v-for="art in artFile" :key="art.title" :art="art" />
-  
+
+    <ArtContainer v-for="art in artFile" :key="art.title" :art="art" />
+
     <!-- Show Art Modal on click of an ArtContainer -->
     <!-- <ArtModal v-if="showModal" :art="selectedArt" @close="showModal = false" /> -->
-    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -33,12 +33,21 @@ import ArtContainer from './components/ArtContainer.vue'
   grid-auto-flow: row;
   padding: 1rem;
   /* Vertical Grid */
-  
+
   font-family: "DM Sans", sans-serif;
 }
+
+@media screen and (max-width: 576px) {
+  .artgrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 .header {
   background-color: #131d26;
-  height: 5vh;
+  height: 64px;
   width: 100%;
   display: flex;
   justify-content: left;
